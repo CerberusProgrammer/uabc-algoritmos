@@ -1,4 +1,4 @@
-package src;
+package src.laboratorio.practica1;
 
 public class Controller {
 
@@ -19,9 +19,6 @@ public class Controller {
     }
 
     public void drawPolygon() {
-        
+
     }
-
-
-
 }

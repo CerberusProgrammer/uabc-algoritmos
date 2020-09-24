@@ -1,4 +1,4 @@
-package src;
+package src.laboratorio.practica1;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

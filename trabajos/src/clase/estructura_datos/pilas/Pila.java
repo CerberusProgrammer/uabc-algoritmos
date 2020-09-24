@@ -1,4 +1,4 @@
-package src;
+package src.clase.estructura_datos.pilas;
 
 public class Pila<T> {
 
@@ -27,7 +27,7 @@ public class Pila<T> {
     boolean isEmpty(){
         return top == -1;
     }
-    }
+
 
     T peek(){
         return pila[top];
