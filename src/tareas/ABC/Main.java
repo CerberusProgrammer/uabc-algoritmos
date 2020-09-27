@@ -1,7 +1,8 @@
-package src.clase.tareas.ABC;
+package src.tareas.ABC;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+
 
 public class Main {
     public static void main(String[] args) {
