@@ -1,12 +1,19 @@
-package src.clase.estructura_datos.pilas;
+package pilas;
 
 public class Pila<T> {
 
     int top;
     T[] pila;
 
-    void push(T object){
+    Pila(){
+        
+    }
 
+    void push(T data){
+        if (!isFull()){
+            top++;
+            pila[top] = data;
+        }
     }
 
     T pop(){
