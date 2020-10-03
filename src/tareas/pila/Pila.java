@@ -5,14 +5,16 @@ public class Pila <T> {
     int top;
     int max;
     int min;
+    T[] pila;
 
     Pila () {
-        
+        top = -1;
+        Pila = (T[]) new Object[10];
     }
 
     push(T data){
         if (!isFull()) {
-            tope++;
+            top++;
             pila[top] = data;
         }
     }
@@ -28,25 +30,16 @@ public class Pila <T> {
         return data;
     }
 
-    boolean isFull() {
-        if(top == max)
-            return true;
-
-        return false;
-    }
-
-    boolean isEmpty() {
-        if(top == min){
-            return true;
-        }
-
-        return False;
-    }
-
     T peek(){
-        T data;
+        return pila[top];
+    }
 
-        return data;
+    boolean isFull(){
+        return top == 10;
+    }
+
+    boolean isEmpty(){
+        return top == -1;
     }
 
     public static void main(String[] args) {
