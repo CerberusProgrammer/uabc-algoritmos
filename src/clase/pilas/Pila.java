@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package src.clase.pilas;
+=======
+package pilas;
+>>>>>>> 602613d3544b48ebb937870641bf44d3904df914
 
 public class Pila<T> {
 
@@ -6,12 +10,22 @@ public class Pila<T> {
     T[] pila;
 
     Pila(){
+<<<<<<< HEAD
         tope = -1;
         Pila = (T[]) new Object[10];
     }
 
     void push(T object){
+=======
+        
+    }
+>>>>>>> 602613d3544b48ebb937870641bf44d3904df914
 
+    void push(T data){
+        if (!isFull()){
+            top++;
+            pila[top] = data;
+        }
     }
 
     T pop(){
