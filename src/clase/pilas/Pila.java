@@ -1,9 +1,14 @@
-package src.clase.estructura_datos.pilas;
+package src.clase.pilas;
 
 public class Pila<T> {
 
     int top;
     T[] pila;
+
+    Pila(){
+        tope = -1;
+        Pila = (T[]) new Object[10];
+    }
 
     void push(T object){
 
@@ -20,6 +25,10 @@ public class Pila<T> {
         return data;
     }
 
+    T peek(){
+        return pila[top];
+    }
+
     boolean isFull(){
         return top == 10;
     }
@@ -28,13 +37,9 @@ public class Pila<T> {
         return top == -1;
     }
 
-
-    T peek(){
-        return pila[top];
-    }
-
-
     public static void main(String[] args) {
         //Pila pila = (T[]) new Object[10];
+        Pila pila = new Pila();
+        
     }
 }
