@@ -9,10 +9,10 @@ public class Pila <T> {
 
     Pila () {
         top = -1;
-        Pila = (T[]) new Object[10];
+        pila = (T[]) new Object[10];
     }
 
-    push(T data){
+    void push(T data){
         if (!isFull()) {
             top++;
             pila[top] = data;
@@ -20,7 +20,7 @@ public class Pila <T> {
     }
 
     T pop() {
-        T data;
+        T data = null;
         
         if (!isEmpty()){
             data = pila[top];
@@ -43,7 +43,15 @@ public class Pila <T> {
     }
 
     public static void main(String[] args) {
-        
+        Pila pila = new Pila();
+        pila.push(1);
+        pila.push(2);
+        pila.push(3);
+        pila.push(4);
+        System.out.println(pila.peek());
+        System.out.println(pila.pop());
+        System.out.println(pila.pop());
+        System.out.println(pila.peek());
     }
 
 }
