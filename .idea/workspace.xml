@@ -19,16 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2ca9c82-ba28-4352-b9c0-0e8b3f62dfc8" name="Default Changelist" comment="this">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tareas/pila/Pila.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clase/pilas/Pila.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clase/pilas/Pila.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uabc-algoritmos.iml" beforeDir="false" />
-    </list>
+    <list default="true" id="d2ca9c82-ba28-4352-b9c0-0e8b3f62dfc8" name="Default Changelist" comment="this" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -147,11 +138,12 @@
     </state>
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601499467300" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601060457947" />
-    <state x="541" y="194" key="new project wizard" timestamp="1601500853719">
+    <state x="541" y="194" key="new project wizard" timestamp="1601742791555">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="541" y="194" key="new project wizard/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601500853719" />
     <state x="551" y="181" key="new project wizard/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601500646120" />
+    <state x="541" y="194" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1601742791555" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1601060502154">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

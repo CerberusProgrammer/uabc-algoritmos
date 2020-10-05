@@ -3,8 +3,6 @@ package src.tareas.pila;
 public class Pila <T> {
 
     int top;
-    int max;
-    int min;
     T[] pila;
 
     Pila () {
