@@ -2,18 +2,22 @@ package src.tareas.recursividad;
 
 class Recursividad {
 
-    String stringToNumber(String number){
-        
+    static String stringToNumber(int number, String string){
+        string = "" + number;
+        if (number == 0)
+            return string;
+        else
+            return stringToNumber(number - 1, string);
     }
 
-    int sumasSucesivas(int x, int y){
+    static int sumasSucesivas(int x, int y){
         if(y == 0)
             return 0;
         else
             return (x + sumasSucesivas(x, y - 1));
     }
 
-    int potencias(int n, int exp){
+    static int potencia(int n, int exp){
         if(exp == 0)
             return 1;
         else if (exp < 0)
@@ -22,18 +26,16 @@ class Recursividad {
             return n * potencia(n, exp - 1);
     }
 
-    int sumArray(int array[], int positionArray){
+    static int sumArray(int array[], int positionArray){
         int size = positionArray;
-        int rta;
 
         if (size == 0)
             return array[size];
         else
-            rta = (array[size]) + sumarValores(array, size - 1);
-        return rta;
+            return (array[size]) + sumArray(array, size - 1);
     }
 
-    double calculateSerie(int n){
+    static double calculateSerie(int n){
         double total = 0;
 
         if (n == 0)
@@ -43,6 +45,6 @@ class Recursividad {
     }
 
     public static void main(String[] args) {
-        
+        System.out.println(stringToNumber(10));
     }
 }
