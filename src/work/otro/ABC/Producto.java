@@ -1,4 +1,4 @@
-package src.tareas.ABC;
+package src.work.otro.ABC;
 
 public class Producto {
 

@@ -1,4 +1,4 @@
-package src.tareas.pila;
+package src.work.pila;
 
 public class Pila <T> {
 
@@ -33,7 +33,7 @@ public class Pila <T> {
     }
 
     boolean isFull(){
-        return top == 10;
+        return top == 9;
     }
 
     boolean isEmpty(){
@@ -42,14 +42,21 @@ public class Pila <T> {
 
     public static void main(String[] args) {
         Pila pila = new Pila();
-        pila.push(1);
-        pila.push(2);
-        pila.push(3);
-        pila.push(4);
-        System.out.println(pila.peek());
-        System.out.println(pila.pop());
-        System.out.println(pila.pop());
-        System.out.println(pila.peek());
+        
+        for(int i = 0; i < 10; i++)
+            pila.push(i);
+
+        System.out.println("Esta vacia?: " + pila.isEmpty());
+        System.out.println("Esta lleno?: " +  pila.isFull());
+        System.out.println("peek: " + pila.peek());
+
+        for(int i = 0; i < 9; i++)
+            pila.pop();
+
+        System.out.println("peek: " + pila.peek());
+        pila.pop();
+        System.out.println("Esta vacia?: " + pila.isEmpty());
+        System.out.println("Esta lleno?: " +  pila.isFull());
     }
 
 }
