@@ -40,23 +40,32 @@ public class Pila <T> {
         return top == -1;
     }
 
-    public static void main(String[] args) {
-        Pila pila = new Pila();
+    public static boolean checkCharacters(String string) {
+        Pila<String> original = new Pila<>();
+        Pila<String> reverso = new Pila<>();
+
+        for (int i = 0; i < string.length(); i++)
+            original.push(string.substring(i, i + 1));
+
+        for (int i = string.length(); i > 0; i--)
+            reverso.push(string.substring(i - 1, i));
         
-        for(int i = 0; i < 10; i++)
-            pila.push(i);
+        for (int i = 0; i < string.length()/2; i++) {
+            int x = (int)reverso.pop().charAt(0) + 2;
+            int y = (int)original.pop().charAt(0);
 
-        System.out.println("Esta vacia?: " + pila.isEmpty());
-        System.out.println("Esta lleno?: " +  pila.isFull());
-        System.out.println("peek: " + pila.peek());
-
-        for(int i = 0; i < 9; i++)
-            pila.pop();
-
-        System.out.println("peek: " + pila.peek());
-        pila.pop();
-        System.out.println("Esta vacia?: " + pila.isEmpty());
-        System.out.println("Esta lleno?: " +  pila.isFull());
+            if (!(x == y || x - 1 == y))
+                return false;
+        }
+        return true;
     }
 
+    public static void main(String[] args) {
+        System.out.println("{[(]}]: " + checkCharacters("{[(]}]")); //false     
+        System.out.println("{[()]}: " + checkCharacters("{[()]}")); //true
+        System.out.println("({[]}): " + checkCharacters("({[]})")); //true    
+        System.out.println("[{()}]: " + checkCharacters("[{()}]")); //true
+        System.out.println("[)[](]: " + checkCharacters("[)[](]")); //false     
+        System.out.println("{[)(]}: " + checkCharacters("{[)(]}")); //false
+    }
 }
